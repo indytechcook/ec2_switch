@@ -1,0 +1,36 @@
+[15-Sep-2011 21:48:49] PHP Warning:  require_once(1): failed to open stream: No such file or directory in /Library/Python/2.7/site-packages/phpsh/phpsh.php(578) : eval()'d code on line 1
+[15-Sep-2011 21:48:49] PHP Stack trace:
+[15-Sep-2011 21:48:49] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 21:48:49] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 21:48:49] PHP   3. eval() /Library/Python/2.7/site-packages/phpsh/phpsh.php:578
+[15-Sep-2011 21:48:49] PHP Fatal error:  require_once(): Failed opening required '1' (include_path='.:/usr/local/Cellar/php/5.3.8/lib/php') in /Library/Python/2.7/site-packages/phpsh/phpsh.php(578) : eval()'d code on line 1
+[15-Sep-2011 21:48:49] PHP Stack trace:
+[15-Sep-2011 21:48:49] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 21:48:49] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 21:48:49] PHP   3. eval() /Library/Python/2.7/site-packages/phpsh/phpsh.php:578
+[15-Sep-2011 21:49:49] PHP Warning:  require_once(/Library/Python/2.7/site-packages/phpsh/sdk-1.4.2.1/sdk.class.php): failed to open stream: No such file or directory in /Library/Python/2.7/site-packages/phpsh/phpsh.php(578) : eval()'d code on line 1
+[15-Sep-2011 21:49:49] PHP Stack trace:
+[15-Sep-2011 21:49:49] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 21:49:49] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 21:49:49] PHP   3. eval() /Library/Python/2.7/site-packages/phpsh/phpsh.php:578
+[15-Sep-2011 21:49:49] PHP Fatal error:  require_once(): Failed opening required '/Library/Python/2.7/site-packages/phpsh/sdk-1.4.2.1/sdk.class.php' (include_path='.:/usr/local/Cellar/php/5.3.8/lib/php') in /Library/Python/2.7/site-packages/phpsh/phpsh.php(578) : eval()'d code on line 1
+[15-Sep-2011 21:49:49] PHP Stack trace:
+[15-Sep-2011 21:49:49] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 21:49:49] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 21:49:49] PHP   3. eval() /Library/Python/2.7/site-packages/phpsh/phpsh.php:578
+[15-Sep-2011 21:50:50] PHP Warning:  dir(/Library/Python/2.7/site-packages/phpsh/phpsh.php(578) : eval()'d code): failed to open dir: No such file or directory in /Library/Python/2.7/site-packages/phpsh/phpsh.php(578) : eval()'d code on line 1
+[15-Sep-2011 21:50:50] PHP Stack trace:
+[15-Sep-2011 21:50:50] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 21:50:50] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 21:50:50] PHP   3. eval() /Library/Python/2.7/site-packages/phpsh/phpsh.php:578
+[15-Sep-2011 21:50:50] PHP   4. dir() /Library/Python/2.7/site-packages/phpsh/phpsh.php(578) : eval()'d code:1
+[15-Sep-2011 21:50:50] PHP Warning:  require_once(/sdk-1.4.2.1/sdk.class.php): failed to open stream: No such file or directory in /Library/Python/2.7/site-packages/phpsh/phpsh.php(578) : eval()'d code on line 1
+[15-Sep-2011 21:50:50] PHP Stack trace:
+[15-Sep-2011 21:50:50] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 21:50:50] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 21:50:50] PHP   3. eval() /Library/Python/2.7/site-packages/phpsh/phpsh.php:578
+[15-Sep-2011 21:50:50] PHP Fatal error:  require_once(): Failed opening required '/sdk-1.4.2.1/sdk.class.php' (include_path='.:/usr/local/Cellar/php/5.3.8/lib/php') in /Library/Python/2.7/site-packages/phpsh/phpsh.php(578) : eval()'d code on line 1
+[15-Sep-2011 21:50:50] PHP Stack trace:
+[15-Sep-2011 21:50:50] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 21:50:50] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 21:50:50] PHP   3. eval() /Library/Python/2.7/site-packages/phpsh/phpsh.php:578

@@ -1,0 +1,268 @@
+[15-Sep-2011 22:13:01] PHP Notice:  Undefined index: storage in /Library/Python/2.7/site-packages/phpsh/phpsh.php on line 241
+[15-Sep-2011 22:13:01] PHP Stack trace:
+[15-Sep-2011 22:13:01] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 22:13:01] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 22:13:01] PHP   3. ___phpsh___pretty_print() /Library/Python/2.7/site-packages/phpsh/phpsh.php:612
+[15-Sep-2011 22:13:01] PHP   4. ___phpsh___parse_dump() /Library/Python/2.7/site-packages/phpsh/phpsh.php:100
+[15-Sep-2011 22:13:01] PHP   5. ___phpsh___parse_dump_obj_lines() /Library/Python/2.7/site-packages/phpsh/phpsh.php:150
+[15-Sep-2011 22:13:01] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /Library/Python/2.7/site-packages/phpsh/phpsh.php on line 197
+[15-Sep-2011 22:13:01] PHP Stack trace:
+[15-Sep-2011 22:13:01] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 22:13:01] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 22:13:01] PHP   3. ___phpsh___pretty_print() /Library/Python/2.7/site-packages/phpsh/phpsh.php:612
+[15-Sep-2011 22:13:01] PHP   4. ___phpsh___parse_dump() /Library/Python/2.7/site-packages/phpsh/phpsh.php:100
+[15-Sep-2011 22:13:01] PHP   5. ___phpsh___parse_dump_obj_lines() /Library/Python/2.7/site-packages/phpsh/phpsh.php:150
+[15-Sep-2011 22:13:01] PHP   6. ___phpsh___parse_dump() /Library/Python/2.7/site-packages/phpsh/phpsh.php:242
+[15-Sep-2011 22:13:01] PHP   7. ___phpsh___parse_dump_arr_lines() /Library/Python/2.7/site-packages/phpsh/phpsh.php:134
+[15-Sep-2011 22:13:01] PHP   8. array_keys() /Library/Python/2.7/site-packages/phpsh/phpsh.php:197
+[15-Sep-2011 22:13:01] PHP Warning:  Invalid argument supplied for foreach() in /Library/Python/2.7/site-packages/phpsh/phpsh.php on line 197
+[15-Sep-2011 22:13:01] PHP Stack trace:
+[15-Sep-2011 22:13:01] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 22:13:01] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 22:13:01] PHP   3. ___phpsh___pretty_print() /Library/Python/2.7/site-packages/phpsh/phpsh.php:612
+[15-Sep-2011 22:13:01] PHP   4. ___phpsh___parse_dump() /Library/Python/2.7/site-packages/phpsh/phpsh.php:100
+[15-Sep-2011 22:13:01] PHP   5. ___phpsh___parse_dump_obj_lines() /Library/Python/2.7/site-packages/phpsh/phpsh.php:150
+[15-Sep-2011 22:13:01] PHP   6. ___phpsh___parse_dump() /Library/Python/2.7/site-packages/phpsh/phpsh.php:242
+[15-Sep-2011 22:13:01] PHP   7. ___phpsh___parse_dump_arr_lines() /Library/Python/2.7/site-packages/phpsh/phpsh.php:134
+[15-Sep-2011 22:13:01] PHP Fatal error:  Uncaught exception 'Exception' with message 'parse error looking for '  }' at position 75; found instead:     ["item"]=>
+    array(4) {
+      ["resourceId"]=>
+      string(10) "i-62ce750d"
+      ["resourceType"]=>
+      string(8) "instance"
+      ["key"]=>
+      string(4) "Name"
+      ["value"]=>
+      string(6) "snap01"
+    }
+  }
+}' in /Library/Python/2.7/site-packages/phpsh/phpsh.php:265
+Stack trace:
+#0 /Library/Python/2.7/site-packages/phpsh/phpsh.php(136): ___phpsh___parse_dump_assert('object(CFArray)...', 75, '  }', false)
+#1 /Library/Python/2.7/site-packages/phpsh/phpsh.php(242): ___phpsh___parse_dump(NULL, 'object(CFArray)...', 75, false, 1)
+#2 /Library/Python/2.7/site-packages/phpsh/phpsh.php(150): ___phpsh___parse_dump_obj_lines(Object(CFArray), 'object(CFArray)...', 75, 1, 0, '', '  ')
+#3 /Library/Python/2.7/site-packages/phpsh/phpsh.php(100): ___phpsh___parse_dump(Object(CFArray), 'object(CFArray)...')
+#4 /Library/Python/2.7/site-packages/phpsh/phpsh.php(612): ___phpsh___pretty_print(Object(CFArray in /Library/Python/2.7/site-packages/phpsh/phpsh.php on line 265
+[15-Sep-2011 22:14:07] PHP Fatal error:  Class 'AmazonEC2' not found in /Library/Python/2.7/site-packages/phpsh/phpsh.php(578) : eval()'d code on line 1
+[15-Sep-2011 22:14:07] PHP Stack trace:
+[15-Sep-2011 22:14:07] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 22:14:07] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 22:14:07] PHP   3. eval() /Library/Python/2.7/site-packages/phpsh/phpsh.php:578
+[15-Sep-2011 22:14:44] PHP Fatal error:  Call to undefined method CFResponse::to_array() in /Library/Python/2.7/site-packages/phpsh/phpsh.php(578) : eval()'d code on line 1
+[15-Sep-2011 22:14:44] PHP Stack trace:
+[15-Sep-2011 22:14:44] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 22:14:44] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 22:14:44] PHP   3. eval() /Library/Python/2.7/site-packages/phpsh/phpsh.php:578
+[15-Sep-2011 22:15:08] PHP Notice:  Undefined index: storage in /Library/Python/2.7/site-packages/phpsh/phpsh.php on line 241
+[15-Sep-2011 22:15:08] PHP Stack trace:
+[15-Sep-2011 22:15:08] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 22:15:08] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 22:15:08] PHP   3. ___phpsh___pretty_print() /Library/Python/2.7/site-packages/phpsh/phpsh.php:612
+[15-Sep-2011 22:15:08] PHP   4. ___phpsh___parse_dump() /Library/Python/2.7/site-packages/phpsh/phpsh.php:100
+[15-Sep-2011 22:15:08] PHP   5. ___phpsh___parse_dump_obj_lines() /Library/Python/2.7/site-packages/phpsh/phpsh.php:150
+[15-Sep-2011 22:15:08] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /Library/Python/2.7/site-packages/phpsh/phpsh.php on line 197
+[15-Sep-2011 22:15:08] PHP Stack trace:
+[15-Sep-2011 22:15:08] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 22:15:08] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 22:15:08] PHP   3. ___phpsh___pretty_print() /Library/Python/2.7/site-packages/phpsh/phpsh.php:612
+[15-Sep-2011 22:15:08] PHP   4. ___phpsh___parse_dump() /Library/Python/2.7/site-packages/phpsh/phpsh.php:100
+[15-Sep-2011 22:15:08] PHP   5. ___phpsh___parse_dump_obj_lines() /Library/Python/2.7/site-packages/phpsh/phpsh.php:150
+[15-Sep-2011 22:15:08] PHP   6. ___phpsh___parse_dump() /Library/Python/2.7/site-packages/phpsh/phpsh.php:242
+[15-Sep-2011 22:15:08] PHP   7. ___phpsh___parse_dump_arr_lines() /Library/Python/2.7/site-packages/phpsh/phpsh.php:134
+[15-Sep-2011 22:15:08] PHP   8. array_keys() /Library/Python/2.7/site-packages/phpsh/phpsh.php:197
+[15-Sep-2011 22:15:08] PHP Warning:  Invalid argument supplied for foreach() in /Library/Python/2.7/site-packages/phpsh/phpsh.php on line 197
+[15-Sep-2011 22:15:08] PHP Stack trace:
+[15-Sep-2011 22:15:08] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 22:15:08] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 22:15:08] PHP   3. ___phpsh___pretty_print() /Library/Python/2.7/site-packages/phpsh/phpsh.php:612
+[15-Sep-2011 22:15:08] PHP   4. ___phpsh___parse_dump() /Library/Python/2.7/site-packages/phpsh/phpsh.php:100
+[15-Sep-2011 22:15:08] PHP   5. ___phpsh___parse_dump_obj_lines() /Library/Python/2.7/site-packages/phpsh/phpsh.php:150
+[15-Sep-2011 22:15:08] PHP   6. ___phpsh___parse_dump() /Library/Python/2.7/site-packages/phpsh/phpsh.php:242
+[15-Sep-2011 22:15:08] PHP   7. ___phpsh___parse_dump_arr_lines() /Library/Python/2.7/site-packages/phpsh/phpsh.php:134
+[15-Sep-2011 22:15:08] PHP Fatal error:  Uncaught exception 'Exception' with message 'parse error looking for '  }' at position 75; found instead:     ["@attributes"]=>
+    array(1) {
+      ["ns"]=>
+      string(40) "http://ec2.amazonaws.com/doc/2011-07-15/"
+    }
+    ["requestId"]=>
+    string(36) "8e7c2399-4c29-4f90-baef-4ea1899949b6"
+    ["tagSet"]=>
+    array(1) {
+      ["item"]=>
+      array(4) {
+        ["resourceId"]=>
+        string(10) "i-62ce750d"
+        ["resourceType"]=>
+        string(8) "instance"
+        ["key"]=>
+        string(4) "Name"
+        ["value"]=>
+        string(6) "snap01"
+      }
+    }
+  }
+}' in /Library/Python/2.7/site-packages/phpsh/phpsh.php:265
+Stack trace:
+#0 /Library/Python/2.7/site-packages/phpsh/phpsh.php(136): ___phpsh___parse_dump_assert('object(CFArray)...', 75, '  }', false)
+#1 /Library/Python/2.7/site-packages/phpsh/phpsh.php(242): ___phpsh___parse_dump(NULL, 'object(CFArray)...', 75, false, 1)
+#2 /Library/Python/2.7/site-packages/phpsh/phpsh.php(150): ___phpsh___parse_dump_obj_lines(Object(CFArray), 'object in /Library/Python/2.7/site-packages/phpsh/phpsh.php on line 265
+[15-Sep-2011 22:15:48] PHP Notice:  Undefined variable: response in /Library/Python/2.7/site-packages/phpsh/phpsh.php(578) : eval()'d code on line 1
+[15-Sep-2011 22:15:48] PHP Stack trace:
+[15-Sep-2011 22:15:48] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 22:15:48] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 22:15:48] PHP   3. eval() /Library/Python/2.7/site-packages/phpsh/phpsh.php:578
+[15-Sep-2011 22:15:48] PHP Notice:  Trying to get property of non-object in /Library/Python/2.7/site-packages/phpsh/phpsh.php(578) : eval()'d code on line 1
+[15-Sep-2011 22:15:48] PHP Stack trace:
+[15-Sep-2011 22:15:48] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 22:15:48] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 22:15:48] PHP   3. eval() /Library/Python/2.7/site-packages/phpsh/phpsh.php:578
+[15-Sep-2011 22:15:48] PHP Notice:  Trying to get property of non-object in /Library/Python/2.7/site-packages/phpsh/phpsh.php(578) : eval()'d code on line 1
+[15-Sep-2011 22:15:48] PHP Stack trace:
+[15-Sep-2011 22:15:48] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 22:15:48] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 22:15:48] PHP   3. eval() /Library/Python/2.7/site-packages/phpsh/phpsh.php:578
+[15-Sep-2011 22:17:22] PHP Notice:  Undefined variable: response in /Library/Python/2.7/site-packages/phpsh/phpsh.php(578) : eval()'d code on line 1
+[15-Sep-2011 22:17:22] PHP Stack trace:
+[15-Sep-2011 22:17:22] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 22:17:22] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 22:17:22] PHP   3. eval() /Library/Python/2.7/site-packages/phpsh/phpsh.php:578
+[15-Sep-2011 22:17:22] PHP Notice:  Trying to get property of non-object in /Library/Python/2.7/site-packages/phpsh/phpsh.php(578) : eval()'d code on line 1
+[15-Sep-2011 22:17:22] PHP Stack trace:
+[15-Sep-2011 22:17:22] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 22:17:22] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 22:17:22] PHP   3. eval() /Library/Python/2.7/site-packages/phpsh/phpsh.php:578
+[15-Sep-2011 22:17:29] PHP Notice:  Undefined variable: response in /Library/Python/2.7/site-packages/phpsh/phpsh.php(578) : eval()'d code on line 1
+[15-Sep-2011 22:17:29] PHP Stack trace:
+[15-Sep-2011 22:17:29] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 22:17:29] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 22:17:29] PHP   3. eval() /Library/Python/2.7/site-packages/phpsh/phpsh.php:578
+[15-Sep-2011 22:17:42] PHP Notice:  Undefined variable: ec2 in /Library/Python/2.7/site-packages/phpsh/phpsh.php(578) : eval()'d code on line 1
+[15-Sep-2011 22:17:42] PHP Stack trace:
+[15-Sep-2011 22:17:42] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 22:17:42] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 22:17:42] PHP   3. eval() /Library/Python/2.7/site-packages/phpsh/phpsh.php:578
+[15-Sep-2011 22:17:42] PHP Fatal error:  Call to a member function describe_tags() on a non-object in /Library/Python/2.7/site-packages/phpsh/phpsh.php(578) : eval()'d code on line 1
+[15-Sep-2011 22:17:42] PHP Stack trace:
+[15-Sep-2011 22:17:42] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 22:17:42] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 22:17:42] PHP   3. eval() /Library/Python/2.7/site-packages/phpsh/phpsh.php:578
+[15-Sep-2011 22:17:50] PHP Fatal error:  Class 'AmazonEC2' not found in /Library/Python/2.7/site-packages/phpsh/phpsh.php(578) : eval()'d code on line 1
+[15-Sep-2011 22:17:50] PHP Stack trace:
+[15-Sep-2011 22:17:50] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 22:17:50] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 22:17:50] PHP   3. eval() /Library/Python/2.7/site-packages/phpsh/phpsh.php:578
+[15-Sep-2011 22:17:53] PHP Notice:  Use of undefined constant reload - assumed 'reload' in /Library/Python/2.7/site-packages/phpsh/phpsh.php(578) : eval()'d code on line 1
+[15-Sep-2011 22:17:53] PHP Stack trace:
+[15-Sep-2011 22:17:53] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 22:17:53] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 22:17:53] PHP   3. eval() /Library/Python/2.7/site-packages/phpsh/phpsh.php:578
+[15-Sep-2011 22:17:56] PHP Notice:  Use of undefined constant reload - assumed 'reload' in /Library/Python/2.7/site-packages/phpsh/phpsh.php(578) : eval()'d code on line 1
+[15-Sep-2011 22:17:56] PHP Stack trace:
+[15-Sep-2011 22:17:56] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 22:17:56] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 22:17:56] PHP   3. eval() /Library/Python/2.7/site-packages/phpsh/phpsh.php:578
+[15-Sep-2011 22:19:19] PHP Notice:  Undefined index: storage in /Library/Python/2.7/site-packages/phpsh/phpsh.php on line 241
+[15-Sep-2011 22:19:19] PHP Stack trace:
+[15-Sep-2011 22:19:19] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 22:19:19] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 22:19:19] PHP   3. ___phpsh___pretty_print() /Library/Python/2.7/site-packages/phpsh/phpsh.php:612
+[15-Sep-2011 22:19:19] PHP   4. ___phpsh___parse_dump() /Library/Python/2.7/site-packages/phpsh/phpsh.php:100
+[15-Sep-2011 22:19:19] PHP   5. ___phpsh___parse_dump_obj_lines() /Library/Python/2.7/site-packages/phpsh/phpsh.php:150
+[15-Sep-2011 22:19:19] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /Library/Python/2.7/site-packages/phpsh/phpsh.php on line 197
+[15-Sep-2011 22:19:19] PHP Stack trace:
+[15-Sep-2011 22:19:19] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 22:19:19] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 22:19:19] PHP   3. ___phpsh___pretty_print() /Library/Python/2.7/site-packages/phpsh/phpsh.php:612
+[15-Sep-2011 22:19:19] PHP   4. ___phpsh___parse_dump() /Library/Python/2.7/site-packages/phpsh/phpsh.php:100
+[15-Sep-2011 22:19:19] PHP   5. ___phpsh___parse_dump_obj_lines() /Library/Python/2.7/site-packages/phpsh/phpsh.php:150
+[15-Sep-2011 22:19:19] PHP   6. ___phpsh___parse_dump() /Library/Python/2.7/site-packages/phpsh/phpsh.php:242
+[15-Sep-2011 22:19:19] PHP   7. ___phpsh___parse_dump_arr_lines() /Library/Python/2.7/site-packages/phpsh/phpsh.php:134
+[15-Sep-2011 22:19:19] PHP   8. array_keys() /Library/Python/2.7/site-packages/phpsh/phpsh.php:197
+[15-Sep-2011 22:19:19] PHP Warning:  Invalid argument supplied for foreach() in /Library/Python/2.7/site-packages/phpsh/phpsh.php on line 197
+[15-Sep-2011 22:19:19] PHP Stack trace:
+[15-Sep-2011 22:19:19] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 22:19:19] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 22:19:19] PHP   3. ___phpsh___pretty_print() /Library/Python/2.7/site-packages/phpsh/phpsh.php:612
+[15-Sep-2011 22:19:19] PHP   4. ___phpsh___parse_dump() /Library/Python/2.7/site-packages/phpsh/phpsh.php:100
+[15-Sep-2011 22:19:19] PHP   5. ___phpsh___parse_dump_obj_lines() /Library/Python/2.7/site-packages/phpsh/phpsh.php:150
+[15-Sep-2011 22:19:19] PHP   6. ___phpsh___parse_dump() /Library/Python/2.7/site-packages/phpsh/phpsh.php:242
+[15-Sep-2011 22:19:19] PHP   7. ___phpsh___parse_dump_arr_lines() /Library/Python/2.7/site-packages/phpsh/phpsh.php:134
+[15-Sep-2011 22:19:19] PHP Fatal error:  Uncaught exception 'Exception' with message 'parse error looking for '  }' at position 76; found instead:     ["item"]=>
+    array(4) {
+      ["resourceId"]=>
+      string(10) "i-62ce750d"
+      ["resourceType"]=>
+      string(8) "instance"
+      ["key"]=>
+      string(4) "Name"
+      ["value"]=>
+      string(6) "snap01"
+    }
+  }
+}' in /Library/Python/2.7/site-packages/phpsh/phpsh.php:265
+Stack trace:
+#0 /Library/Python/2.7/site-packages/phpsh/phpsh.php(136): ___phpsh___parse_dump_assert('object(CFArray)...', 76, '  }', false)
+#1 /Library/Python/2.7/site-packages/phpsh/phpsh.php(242): ___phpsh___parse_dump(NULL, 'object(CFArray)...', 76, false, 1)
+#2 /Library/Python/2.7/site-packages/phpsh/phpsh.php(150): ___phpsh___parse_dump_obj_lines(Object(CFArray), 'object(CFArray)...', 76, 1, 0, '', '  ')
+#3 /Library/Python/2.7/site-packages/phpsh/phpsh.php(100): ___phpsh___parse_dump(Object(CFArray), 'object(CFArray)...')
+#4 /Library/Python/2.7/site-packages/phpsh/phpsh.php(612): ___phpsh___pretty_print(Object(CFArray in /Library/Python/2.7/site-packages/phpsh/phpsh.php on line 265
+[15-Sep-2011 22:39:54] PHP Notice:  Undefined index: storage in /Library/Python/2.7/site-packages/phpsh/phpsh.php on line 241
+[15-Sep-2011 22:39:54] PHP Stack trace:
+[15-Sep-2011 22:39:54] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 22:39:54] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 22:39:54] PHP   3. ___phpsh___pretty_print() /Library/Python/2.7/site-packages/phpsh/phpsh.php:612
+[15-Sep-2011 22:39:54] PHP   4. ___phpsh___parse_dump() /Library/Python/2.7/site-packages/phpsh/phpsh.php:100
+[15-Sep-2011 22:39:54] PHP   5. ___phpsh___parse_dump_obj_lines() /Library/Python/2.7/site-packages/phpsh/phpsh.php:150
+[15-Sep-2011 22:39:54] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /Library/Python/2.7/site-packages/phpsh/phpsh.php on line 197
+[15-Sep-2011 22:39:54] PHP Stack trace:
+[15-Sep-2011 22:39:54] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 22:39:54] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 22:39:54] PHP   3. ___phpsh___pretty_print() /Library/Python/2.7/site-packages/phpsh/phpsh.php:612
+[15-Sep-2011 22:39:54] PHP   4. ___phpsh___parse_dump() /Library/Python/2.7/site-packages/phpsh/phpsh.php:100
+[15-Sep-2011 22:39:54] PHP   5. ___phpsh___parse_dump_obj_lines() /Library/Python/2.7/site-packages/phpsh/phpsh.php:150
+[15-Sep-2011 22:39:54] PHP   6. ___phpsh___parse_dump() /Library/Python/2.7/site-packages/phpsh/phpsh.php:242
+[15-Sep-2011 22:39:54] PHP   7. ___phpsh___parse_dump_arr_lines() /Library/Python/2.7/site-packages/phpsh/phpsh.php:134
+[15-Sep-2011 22:39:54] PHP   8. array_keys() /Library/Python/2.7/site-packages/phpsh/phpsh.php:197
+[15-Sep-2011 22:39:54] PHP Warning:  Invalid argument supplied for foreach() in /Library/Python/2.7/site-packages/phpsh/phpsh.php on line 197
+[15-Sep-2011 22:39:54] PHP Stack trace:
+[15-Sep-2011 22:39:54] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[15-Sep-2011 22:39:54] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[15-Sep-2011 22:39:54] PHP   3. ___phpsh___pretty_print() /Library/Python/2.7/site-packages/phpsh/phpsh.php:612
+[15-Sep-2011 22:39:54] PHP   4. ___phpsh___parse_dump() /Library/Python/2.7/site-packages/phpsh/phpsh.php:100
+[15-Sep-2011 22:39:54] PHP   5. ___phpsh___parse_dump_obj_lines() /Library/Python/2.7/site-packages/phpsh/phpsh.php:150
+[15-Sep-2011 22:39:54] PHP   6. ___phpsh___parse_dump() /Library/Python/2.7/site-packages/phpsh/phpsh.php:242
+[15-Sep-2011 22:39:54] PHP   7. ___phpsh___parse_dump_arr_lines() /Library/Python/2.7/site-packages/phpsh/phpsh.php:134
+[15-Sep-2011 22:39:54] PHP Fatal error:  Uncaught exception 'Exception' with message 'parse error looking for '  }' at position 75; found instead:     ["item"]=>
+    array(4) {
+      ["resourceId"]=>
+      string(10) "i-62ce750d"
+      ["resourceType"]=>
+      string(8) "instance"
+      ["key"]=>
+      string(4) "Name"
+      ["value"]=>
+      string(6) "snap01"
+    }
+  }
+}' in /Library/Python/2.7/site-packages/phpsh/phpsh.php:265
+Stack trace:
+#0 /Library/Python/2.7/site-packages/phpsh/phpsh.php(136): ___phpsh___parse_dump_assert('object(CFArray)...', 75, '  }', false)
+#1 /Library/Python/2.7/site-packages/phpsh/phpsh.php(242): ___phpsh___parse_dump(NULL, 'object(CFArray)...', 75, false, 1)
+#2 /Library/Python/2.7/site-packages/phpsh/phpsh.php(150): ___phpsh___parse_dump_obj_lines(Object(CFArray), 'object(CFArray)...', 75, 1, 0, '', '  ')
+#3 /Library/Python/2.7/site-packages/phpsh/phpsh.php(100): ___phpsh___parse_dump(Object(CFArray), 'object(CFArray)...')
+#4 /Library/Python/2.7/site-packages/phpsh/phpsh.php(612): ___phpsh___pretty_print(Object(CFArray in /Library/Python/2.7/site-packages/phpsh/phpsh.php on line 265
+[16-Sep-2011 09:16:11] PHP Notice:  Undefined property: ___Phpsh___::$group_name in /Library/Python/2.7/site-packages/phpsh/phpsh.php(578) : eval()'d code on line 1
+[16-Sep-2011 09:16:11] PHP Stack trace:
+[16-Sep-2011 09:16:11] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[16-Sep-2011 09:16:11] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[16-Sep-2011 09:16:11] PHP   3. eval() /Library/Python/2.7/site-packages/phpsh/phpsh.php:578
+[16-Sep-2011 09:16:11] PHP Warning:  rawurlencode() expects parameter 1 to be string, array given in /Users/indytechcook/projects/cb_aws/sdk-1.4.2.1/utilities/utilities.class.php on line 150
+[16-Sep-2011 09:16:11] PHP Stack trace:
+[16-Sep-2011 09:16:11] PHP   1. {main}() /Library/Python/2.7/site-packages/phpsh/phpsh.php:0
+[16-Sep-2011 09:16:11] PHP   2. ___Phpsh___->interactive_loop() /Library/Python/2.7/site-packages/phpsh/phpsh.php:634
+[16-Sep-2011 09:16:11] PHP   3. eval() /Library/Python/2.7/site-packages/phpsh/phpsh.php:578
+[16-Sep-2011 09:16:11] PHP   4. AmazonEC2->describe_instances() /Library/Python/2.7/site-packages/phpsh/phpsh.php(578) : eval()'d code:1
+[16-Sep-2011 09:16:11] PHP   5. CFRuntime->authenticate() /Users/indytechcook/projects/cb_aws/sdk-1.4.2.1/services/ec2.class.php:2346
+[16-Sep-2011 09:16:11] PHP   6. CFUtilities->to_signable_string() /Users/indytechcook/projects/cb_aws/sdk-1.4.2.1/sdk.class.php:987
+[16-Sep-2011 09:16:11] PHP   7. CFUtilities->encode_signature2() /Users/indytechcook/projects/cb_aws/sdk-1.4.2.1/utilities/utilities.class.php:136
+[16-Sep-2011 09:16:11] PHP   8. rawurlencode() /Users/indytechcook/projects/cb_aws/sdk-1.4.2.1/utilities/utilities.class.php:150

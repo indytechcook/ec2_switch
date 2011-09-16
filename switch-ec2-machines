@@ -1,0 +1,156 @@
+#!/usr/bin/env php
+
+<?php
+
+define('SCRIPT_COLOR_PASS', 32); // Green.
+define('SCRIPT_COLOR_FAIL', 31); // Red.
+define('SCRIPT_COLOR_EXCEPTION', 33); // Brown.
+
+// Set defaults and get overrides.
+list($args, $count) = parse_args();
+
+if ($args['help'] || $count == 0) {
+  script_help();
+  exit;
+}
+
+if (script_validate()) {
+  exit;
+}
+
+require_once dir(__FILE__) . '/switch-ec2-machines.php';
+
+try {
+  $ebSwitch = new EBSwitch(
+    $args['elb'],
+    $args['group']
+  );
+
+  $ebSwitch->switch_to($args['cluster']);
+
+} catch (Exception $e) {
+  print_error($e->__toString());
+  exit;
+}
+
+script_print('SUCCESS', SCRIPT_COLOR_PASS);
+
+
+/**
+ * Parse execution argument and ensure that all are valid.
+ *
+ * @return The list of arguments.
+ */
+function parse_args() {
+  // Set default values.
+  $args = array(
+    'help' => FALSE,
+    'group' => '',
+    'cluster' => '',
+    'elb' => '',
+  );
+
+  $count = 0;
+  while ($arg = array_shift($_SERVER['argv'])) {
+    if (preg_match('/--(\S+)/', $arg, $matches)) {
+      // Argument found.
+      if (array_key_exists($matches[1], $args)) {
+        // Argument found in list.
+        $previous_arg = $matches[1];
+        if (is_bool($args[$previous_arg])) {
+          $args[$matches[1]] = TRUE;
+        }
+        else {
+          $args[$matches[1]] = array_shift($_SERVER['argv']);
+        }
+      }
+      else {
+        // Argument not found in list.
+        print_error("Unknown argument '$arg'.");
+        exit;
+      }
+    }
+  }
+
+  return array($args, $count);
+}
+
+/**
+ * Validate the arguments
+ */
+function script_validate() {
+  global $args;
+  $in_error = FALSE;
+
+  if (empty($args['group'])) {
+    print_error('Group argument is required.');
+    $in_error = TRUE;
+  }
+
+  if (empty($args['cluster'])) {
+    print_error('Cluster argument is required.');
+    $in_error = TRUE;
+  }
+
+  if (empty($args['elb'])) {
+    print_error('ELB Name argument is required.');
+      $in_error = TRUE;
+  }
+
+  return $in_error;
+}
+
+/**
+ * Print help text.
+ */
+function script_help() {
+  global $args;
+
+  echo <<<EOF
+
+Switch the active server
+
+Usage:        {$args['script']} [OPTIONS]
+Example:      {$args['script']} --group=group_1 --cluster=cluster_1 --elb=elb_name
+
+All arguments are long options.  Groups contain Clusters.
+
+  --help      Print this page.
+
+  --group     (Required) The name of the group to change the the active Cluster
+
+  --cluster   (Required) The cluster of EC's to make active
+
+  --elb       (Required) The name of the ELB to change.
+\n
+EOF;
+}
+
+/**
+ * Print error message prefixed with "  ERROR: " and displayed in fail color
+ * if color output is enabled.
+ *
+ * @param $message The message to print.
+ */
+function print_error($message) {
+  script_print("  ERROR: $message\n", SCRIPT_COLOR_FAIL);
+}
+
+/**
+ * Print a message to the console, if color is enabled then the specified
+ * color code will be used.
+ *
+ * @param $message The message to print.
+ * @param $color_code The color code to use for coloring.
+ */
+function script_print($message, $color_code) {
+  global $args;
+  if ($args['color']) {
+    echo "\033[" . $color_code . "m" . $message . "\033[0m";
+  }
+  else {
+    echo $message;
+  }
+}
+
+?>
